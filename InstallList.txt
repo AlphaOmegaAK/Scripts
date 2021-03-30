@@ -1,0 +1,82 @@
+================================================================================
+==================================== ADD PPAs ==================================
+================================================================================
+
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+
+sudo add-apt-repository ppa:aslatter/ppa
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+sudo add-apt-repository ppa:ubuntuhandbook1/gimp
+
+sudo add-apt-repository ppa:linuxuprising/java
+
+sudo add-apt-repository ppa:wereturtle/ppa
+
+
+================================================================================
+================================ APT INSTALLS ==================================
+================================================================================
+
+sudo apt install fish i3 xclip apt-transport-https curl wget gdebi-core snapd python3.9 build-essential libssl-dev libffi-dev python3-dev python3-pip python3-venv feh playerctl gdb gdebi  openssh-server fail2ban ufw libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 software-properties-common gnome-tweak fonts-font-awesome fonts-firacode lua5.3 maven
+
+oracle-java15-installer
+
+sudo apt install oracle-java15-set-defaul
+
+sudo apt install ghostwriter -f
+================================================================================
+================================ SNAP INSTALLS =================================
+================================================================================
+
+sudo snap install --classic code 
+					figma-linux 
+					--edge nvim --classic 
+					intellij-idea-community --classic
+					mailspringsudo 
+			 		
+
+
+
+================================================================================
+=================================== INSTALLS ===================================
+================================================================================
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+git clone https://github.com/powerline/fonts.git
+cd fonts && ./install.sh
+
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+python3 -m pip install --user --upgrade pynvim
+
+
+
+================================================================================
+==================================== LINKS =====================================
+================================================================================
+
+i3
+i3status
+nvim/
+.tmux.conf
+
+config.fish
+aliases.fish
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: TODO :::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+
+Install script for apt + snap
+	+ tpm
+	+ vim-plug  
+Repos pull script + correct destinations
+Symlinks to .config/$LINKS
