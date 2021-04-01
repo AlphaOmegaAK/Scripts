@@ -21,7 +21,7 @@ sudo add-apt-repository ppa:wereturtle/ppa
 ================================ APT INSTALLS ==================================
 ================================================================================
 
-sudo apt install fish i3 xclip apt-transport-https curl wget gdebi-core snapd python3.9 build-essential libssl-dev libffi-dev python3-dev python3-pip python3-venv feh playerctl gdb gdebi  openssh-server fail2ban ufw libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 software-properties-common gnome-tweak fonts-font-awesome fonts-firacode lua5.3 maven
+sudo apt install fish i3 xclip apt-transport-https curl wget gdebi-core snapd python3.9 build-essential libssl-dev libffi-dev python3-dev python3-pip python3-venv feh playerctl gdb gdebi  openssh-server fail2ban ufw libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 software-properties-common gnome-tweak fonts-font-awesome fonts-firacode lua5.3 maven libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev
 
 oracle-java15-installer
 
@@ -56,6 +56,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 python3 -m pip install --user --upgrade pynvim
 
+
+
+--- PICOM Window Composer
+git clone https://github.com/yshui/picom && cd picom
+meson --buildtype=release . build
+ninja -C build
+ninja -C build install
 
 
 ================================================================================
