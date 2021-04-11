@@ -36,7 +36,8 @@ sudo snap install --classic code
 					figma-linux 
 					--edge nvim --classic 
 					intellij-idea-community --classic
-					mailspringsudo 
+					mailspring 
+                    tree
 			 		
 
 
@@ -56,6 +57,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 python3 -m pip install --user --upgrade pynvim
 
+--- Rust
+-Install
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+-Uninstall
+rustup self uninstall
 
 
 --- PICOM Window Composer
